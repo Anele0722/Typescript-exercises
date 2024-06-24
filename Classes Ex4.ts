@@ -1,9 +1,9 @@
-class Person {
-    name: string;
-    age: number;
+class Person { 
+    name: string; // Public property to store the person's name
+    age: number;  // Public property that stores person's age 
     private socialSecurityNumber: string;
 
-    constructor(name: string, age: number, ssn: string) {
+    constructor(name: string, age: number, ssn: string) { // Constructor initializing the properties
         this.name = name;
         this.age = age;
         this.socialSecurityNumber = ssn;
