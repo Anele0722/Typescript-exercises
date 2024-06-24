@@ -8,7 +8,12 @@ function getFixedNumber(): number {
     return 10;
 }
 
-// 3. Function that takes a string and an optional boolean parameter
-function manipulateString(inputString: string, toUppercase: boolean = false): string {
-    return toUppercase ? inputString.toUpperCase() : inputString.toLowerCase();
+// 3. A function that takes a string and an optional boolean parameter. If the boolean
+// is true, returns the string in uppercase; otherwise, returns it in lowercase.
+function manipulateString(input: string, toUpperCase?: boolean): string {
+    if (toUpperCase) {
+        return input.toUpperCase();
+    } else {
+        return input.toLowerCase();
+    }
 }
