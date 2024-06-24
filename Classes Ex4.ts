@@ -17,3 +17,8 @@ class Person {
         return this.age;
     }
 }
+
+// Usage example 
+const person = new Person('Anele Twala', 18, '456-45-6789');
+console.log(person.getName()); // Output: Anele Twala 
+console.log(person.getAge()); // Output: 18
