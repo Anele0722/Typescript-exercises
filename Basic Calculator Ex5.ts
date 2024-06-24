@@ -18,3 +18,16 @@ class Calculator {
         return num1 * num2;
     }
 }
+
+// usage example 
+const calculator = new Calculator();
+
+console.log(calculator.add(5, 3));      // Output: 8
+console.log(calculator.minus(5, 3));    // Output: 2
+console.log(calculator.divide(6, 3));   // Output: 2
+console.log(calculator.multiply(5, 3)); // Output: 15
+
+try {
+    console.log(calculator.divide(6, 0)); // Throws an error
+} catch (error) {
+    console.error(error.message);             // Output: Division by zero is not allowed.
